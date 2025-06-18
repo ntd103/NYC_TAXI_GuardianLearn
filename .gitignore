@@ -1,7 +1,17 @@
-echo "# Data files - too large for GitHub" > .gitignore
-echo "*.csv" >> .gitignore
-echo "data/" >> .gitignore
-echo "__pycache__/" >> .gitignore
-echo "*.pyc" >> .gitignore
-echo ".env" >> .gitignore
-echo ".vscode/" >> .gitignore
+# Bỏ qua toàn bộ thư mục models
+/models/
+
+# Bỏ qua tất cả các file .csv trong toàn bộ dự án
+*.csv
+
+# --- Các gợi ý thêm cho dự án Python/VSCode ---
+# Thư mục môi trường ảo
+.venv/
+venv/
+env/
+
+# Thư mục cache của Python
+__pycache__/
+
+# File cấu hình của user trên VSCode
+.vscode/
