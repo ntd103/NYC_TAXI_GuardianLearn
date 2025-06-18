@@ -1,11 +1,9 @@
 # NYC Taxi Duration Predictor
----
 This project is a complete machine learning application that covers the entire data product lifecycle: from processing and analyzing raw data with Apache Spark, building and optimizing a linear regression model with PySpark MLlib, to deploying the model as an interactive web application using Streamlit. The entire development environment is containerized and managed by Docker and VS Code Dev Containers, ensuring consistency and reproducibility.
 
 The primary goal is not only to create an accurate prediction model but also to build a complete product where end-users can directly interact with the model through a user-friendly graphical interface.
 
 ## Key Features
----
 - Big Data Processing: Utilizes Apache Spark to efficiently process and clean millions of taxi trip records.
 - Machine Learning Pipeline: Constructs an automated and consistent ML pipeline, including feature engineering, normalization, and model training steps.
 - Model Optimization: Applies techniques like Cross-Validation and Regularization to find the best-performing model.
@@ -14,7 +12,6 @@ The primary goal is not only to create an accurate prediction model but also to 
 - Containerized Environment: The entire project is containerized using Docker, making setup and deployment simple across any system.
 
 ## Tech Stack
----
 - Language: Python 3.9+
 - Docker Images: pyspark-notebook:spark-3.5.0
 - Machine Learning: PySpark MLlib
@@ -23,7 +20,6 @@ The primary goal is not only to create an accurate prediction model but also to 
 - Development Environment: VS Code, WSL2, Dev Containers
 
 ## Quick Start
----
 ### Step 1: Clone this repo
 
 ```
@@ -60,7 +56,6 @@ This will start the Spark/Jupyter container.
 
 
 ## How to Use
----
 Once the environment is running, you can interact with it as follows.
 
 ### 1. Analyze and Train the Model (in JupyterLab)
@@ -91,7 +86,6 @@ streamlit run /home/jovyan/app/app.py
 Access the app: Open a web browser and navigate to `http://localhost:8501` to view and interact with the application.
 
 ## Project Structure
----
 The project is organized with a clear structure to separate different components:
 ```
 NYC_TAXI_GuardianLearn/
@@ -118,7 +112,6 @@ NYC_TAXI_GuardianLearn/
 ```
 
 ## Future Improvements
----
 ...loading
 
 ---
