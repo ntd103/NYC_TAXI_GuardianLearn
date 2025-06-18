@@ -1,0 +1,5 @@
+streamlit
+pandas
+geopy
+pyarrow>=14
+pyspark==3.5.0

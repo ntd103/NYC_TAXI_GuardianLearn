@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  spark-lab:
+    image: jupyter/pyspark-notebook:spark-3.5.0
+    container_name: spark-lab
+    working_dir: /home/jovyan/work
+    volumes:
+      - ./:/home/jovyan/work:cached
+    ports:
+      - "8888:8888"   # JupyterLab
+      - "4040:4040"   # Spark UI
+      - "8501:8501"   # Streamlit GUI
+    shm_size: "2gb"
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
+      GRANT_SUDO: "yes"
+    command: >
+      bash -lc "
+        pip install --no-cache-dir -r requirements.txt
+        start-notebook.sh --NotebookApp.token='' &
+        # then launch Streamlit GUI
+        python -m streamlit run app/app.py \
+          --server.address=0.0.0.0 \
+          --server.port=8501 \
+          --server.enableCORS=false
+      "

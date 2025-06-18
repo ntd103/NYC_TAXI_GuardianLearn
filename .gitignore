@@ -1,0 +1,7 @@
+echo "# Data files - too large for GitHub" > .gitignore
+echo "*.csv" >> .gitignore
+echo "data/" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo ".env" >> .gitignore
+echo ".vscode/" >> .gitignore
